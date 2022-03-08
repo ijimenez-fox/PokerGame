@@ -1,0 +1,81 @@
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>cls
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "1H,   20H, 14H, 1H,   3S 1D,   20D, 14D, 1D,   3S" 
+Poker Game! Params [1H,   20H, 14H, 1H,   3S 1D,   20D, 14D, 1D,   3S]
+Error: Hands Count [1]
+Please send 2 HandsHands separated by | Cards separated by , 
+
+Sample: PokerGame "2D, 2S, 2H, 2C, 3S | AD, 9D, KD, 7D, 6D"
+Each card has Weight+Family
+Weight =  2, 3, 4, 5, 6, 7, 8, 9, 10, J Q K A for Jack, Queen, King, Ace
+Family = H D C S  for Harts, Diamonds, Clubes, Spades
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "1H,   20H, 14H, 1H,   3S | 1D,   20D, 14D, 1D,   3S" 
+Poker Game! Params [1H,   20H, 14H, 1H,   3S | 1D,   20D, 14D, 1D,   3S]
+Error in weight card [01]
+Not Valid Cards
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "1H,   20H, 14H, 1N,   3S | 1D,   20D, 14D, 1D,   3S" 
+Poker Game! Params [1H,   20H, 14H, 1N,   3S | 1D,   20D, 14D, 1D,   3S]
+Error in weight card [01]
+Not Valid Cards
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "8C, 10S, KC, 9H, 4S | 7D, 2S, 5D, 3S, AC" 
+Poker Game! Params [8C, 10S, KC, 9H, 4S | 7D, 2S, 5D, 3S, AC]
+Hand 1 Results Nada [0] [13]
+Hand 2 Results Nada [0] [14]
+Wow Same Poker hand, but Player 2 wins, with better cards
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "5H, 8C, 6S, 2S, 2D | AC, KS, QS, 10D, 9D" 
+Poker Game! Params [5H, 8C, 6S, 2S, 2D | AC, KS, QS, 10D, 9D]
+Hand 1 Results One Pair [4] [8]
+Hand 2 Results Nada [0] [14]
+Hand 1 wins!
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "5H, 8C, 6S, 2S, 2D | AC, KS, QS, 3S, 3D" 
+Poker Game! Params [5H, 8C, 6S, 2S, 2D | AC, KS, QS, 3S, 3D]
+Hand 1 Results One Pair [4] [8]
+Hand 2 Results One Pair [6] [14]
+Wow Same Poker hand, but Player 2 wins, with better cards
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "2C, 2S, 3S, 3D, 4D | AH, AC, KS, QS, JD" 
+Poker Game! Params [2C, 2S, 3S, 3D, 4D | AH, AC, KS, QS, JD]
+Hand 1 Results Two Pairs [10] [4]
+Hand 2 Results One Pair [28] [13]
+Hand 1 wins!
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "2S, 2D, 2C, 3D, 4D | AD, AC, KS, KH, QC" 
+Poker Game! Params [2S, 2D, 2C, 3D, 4D | AD, AC, KS, KH, QC]
+Hand 1 Results Three of a Kind [6] [4]
+Hand 2 Results Two Pairs [54] [12]
+Hand 1 wins!
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "2C, 3D, 4D ,5H ,6D | AD, AC, AS, KH, QC" 
+Poker Game! Params [2C, 3D, 4D ,5H ,6D | AD, AC, AS, KH, QC]
+Hand 1 Results Straight [9999] [6]
+Hand 2 Results Three of a Kind [42] [13]
+Hand 1 wins!
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "2D, 3C, 4S ,5C ,6C | 2S, 3S, 4C ,5D ,6D" 
+Poker Game! Params [2D, 3C, 4S ,5C ,6C | 2S, 3S, 4C ,5D ,6D]
+Hand 1 Results Straight [9999] [6]
+Hand 2 Results Straight [9999] [6]
+DRAW, No one wins, please try again
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "2C, 3C, 4C ,5C ,6C | 3D, 4C, 5S, 6H, 7C" 
+Poker Game! Params [2C, 3C, 4C ,5C ,6C | 3D, 4C, 5S, 6H, 7C]
+Duplicated Card [4C]
+Not Valid Cards
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "2D, 4D, 5D, 7D, 8D | AD, AC, AS, KH, QC" 
+Poker Game! Params [2D, 4D, 5D, 7D, 8D | AD, AC, AS, KH, QC]
+Hand 1 Results Flush [0] [8]
+Hand 2 Results Three of a Kind [42] [13]
+Hand 1 wins!
+
+C:\Users\ijimenez5\source\repos\PokerGame\PokerGame\bin\Release\net45\publish>PokerGame "2D, 2S, 2H, 3D, 3C | AD, 9D, KD, 7D, 6D" 
+Poker Game! Params [2D, 2S, 2H, 3D, 3C | AD, 9D, KD, 7D, 6D]
+Hand 1 Results Full House [12] [3]
+Hand 2 Results Flush [0] [14]
+Hand 1 wins!
